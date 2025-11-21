@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Movies</title>
+ 
+</head>
+<body   >
+
+ 
+
+ 
+<div  >
+
+<h1>{{ minfo.topic }}</h1>
+
+<div   >  
+
+<table style="text-align: center ; border:  1px solid #000 ;">
+
+
+   <tr style="background-color: blue ; color: #fff ; height: 30px;">
+      <th style="width: 50px;  ">{{ minfo.headcolumns[0] }}</th>
+      <th style="width: 200px; ">{{ minfo.headcolumns[1] }}</th>
+      <th style="width: 80px;  ">{{ minfo.headcolumns[2] }}</th>
+      <th style="width: 300px; ">{{ minfo.headcolumns[3] }}</th>
+      <th style="width: 200px; ">{{ minfo.headcolumns[4] }}</th>
+      <th style="width: 200px; ">{{ minfo.headcolumns[5] }}</th>
+   </tr>
+
+
+
+    {% for row in rows %}
+      <tr  >
+ 
+      <td style="text-align: center ; border:  1px solid #000 ;"  >{{ row[0] }}</td>
+      <td style="text-align: left ; border:  1px solid #000 ;"  >{{ row[1] }}</td>
+      <td style="text-align: center ;border:  1px solid #000 ;" >{{ row[2] }}</td>
+      <td style="text-align: left ;border:  1px solid #000 ;"   >{{ row[3] }}</td>
+      <td style="text-align: center ;border:  1px solid #000 ;" >{{ row[4] }}</td>
+      <td style="text-align: center ;border:  1px solid #000 ;" ><img style="width:100px; height: 100px;" src="/static/{{ row[5] }}"  ></td>
+
+      </tr>
+   {% endfor %}
+
+</table>
+
+<div style="margin-top: 50px; ">
+   <a href="{{ minfo.urlmovie }}" >{{ minfo.moviespage  }}</a>
+</div> 
+
+
+</div>
