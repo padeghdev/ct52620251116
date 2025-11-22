@@ -33,9 +33,9 @@ def inserttable ( connstr , tablename , fieldnames , datainsert  ):
       sql +=  " ) " 
       sql +=  "" 
 
-      print (sql)
+      #print (sql)
 
-      print (datainsert )
+      #print (datainsert )
     
  
       

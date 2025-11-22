@@ -4,9 +4,6 @@ def insertmovies( connstr  , tablename ,  datainsert  ):
 
    try:
 
- 
-
-
       tablename  = "movies" 
 
       fieldnames =  ( "mid" , "m_name" , "release_date" , "genre" , "country" , "imagename"  )

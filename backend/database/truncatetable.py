@@ -11,4 +11,4 @@ def truncatetable( dbconn , tablname ):
 
    except:
       print( "Error!" )
-      curcor.close()
+      cursor.close()
